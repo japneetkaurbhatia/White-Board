@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Board</title>
+    <link rel="stylesheet" href="style.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="tools">
+            <button type="button" class="button">Undo</button>
+            <button onClick="clear_canvas()" type="button" class="button">Clear</button>
+
+            <div onClick="change_color(this)" class="color-field" style="background: red;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: blue;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: green;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: yellow;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: black;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: violet;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: orange;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: brown;"></div>
+            
+            <input onInput="draw_color = this.value" type="color" class="color-picker">
+            <input onInput="draw_width = this.value" type="range" min="1" max="100" class="pen-range">
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
