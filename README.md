@@ -1,1 +1,2 @@
-# White-Board
+# WHITE-BOARD
+Tech Stack : HTML, CSS, Js

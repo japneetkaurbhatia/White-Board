@@ -11,20 +11,24 @@
 <body>
     <div class="container">
         <div class="tools">
-            <button type="button" class="button">Undo</button>
-            <button onClick="clear_canvas()" type="button" class="button">Clear</button>
-
-            <div onClick="change_color(this)" class="color-field" style="background: red;"></div>
-            <div onClick="change_color(this)" class="color-field" style="background: blue;"></div>
-            <div onClick="change_color(this)" class="color-field" style="background: green;"></div>
-            <div onClick="change_color(this)" class="color-field" style="background: yellow;"></div>
-            <div onClick="change_color(this)" class="color-field" style="background: black;"></div>
-            <div onClick="change_color(this)" class="color-field" style="background: violet;"></div>
-            <div onClick="change_color(this)" class="color-field" style="background: orange;"></div>
-            <div onClick="change_color(this)" class="color-field" style="background: brown;"></div>
-            
-            <input onInput="draw_color = this.value" type="color" class="color-picker">
-            <input onInput="draw_width = this.value" type="range" min="1" max="100" class="pen-range">
+            <div class="choose-operations">
+                <button onClick="undo_last()" type="button" class="button">Undo</button>
+                <button onClick="clear_canvas()" type="button" class="button">Clear</button>
+            </div> 
+            <div class="choose-color">  
+                <div onClick="change_color(this)" class="color-field" style="background: red;"></div>
+                <div onClick="change_color(this)" class="color-field" style="background: blue;"></div>
+                <div onClick="change_color(this)" class="color-field" style="background: green;"></div>
+                <div onClick="change_color(this)" class="color-field" style="background: yellow;"></div>
+                <div onClick="change_color(this)" class="color-field" style="background: black;"></div>
+                <div onClick="change_color(this)" class="color-field" style="background: violet;"></div>
+                <div onClick="change_color(this)" class="color-field" style="background: orange;"></div>
+                <div onClick="change_color(this)" class="color-field" style="background: brown;"></div>
+            </div>
+                <input onInput="draw_color = this.value" type="color" class="color-picker">
+            <div class="choose-features">
+                <input onInput="draw_width = this.value" type="range" min="1" max="100" class="pen-range" onInput="draw_width = this.value">
+            </div>
         </div>
         <canvas id="canvas"></canvas>
     </div>
