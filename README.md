@@ -15,4 +15,4 @@
 + Javascript
 + JQuery
 
-![Display](https://github.com/japneetbhatia/White-Board/images/WhiteBoard.JPG)
+![Display](https://github.com/japneetbhatia/White-Board/blob/master/images/WhiteBoard.JPG)
