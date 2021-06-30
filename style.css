@@ -1,34 +1,33 @@
 body {
     margin: 0px;
-    padding: 30px;
+    /* padding: 30px; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
-    background: #313131;
+    background: #ad9292;
 }
 
 .tools {
     display: flex;
-    justify-content: center;
+    height: 10vh;
+    justify-content: space-evenly;
     flex-direction: row;
-    margin-top: 2px;
+    margin-top: 35px;
 }
 
-.choose-operations {
-    width: 25%;
-    margin-top: 10px;
+.drawing-tool {
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.choose-color {
-    width: 20%;
+.drawRect {
+    height: 20px;
+    width: 20px;
 }
-
-.choose-features {
-    width: 25%;
-    margin-top: 20px;
-}
-.tools .color-field {
-    height: 30px;
-    width: 30px;
+ .tools  
+.color-field {
+    height: 20px;
+    width: 20px;
     min-height: 20px;
     min-width: 20px;
     cursor: pointer;
@@ -36,7 +35,7 @@ body {
     box-sizing: border-box;
     border: 2px solid white;
     align-self: center;
-    margin: 0 10px;
+    /* margin: 2px 2px; */
 }
 
  .button {
@@ -52,19 +51,23 @@ body {
 }
 
 .color-picker {
-    align-self: center;
-    margin: 0 5px;
-    height: 40px;
-    width: 40px;
+    /* align-self: center; */
+    margin-right: 15px;
+    height: 30px;
+    width: 30px;
 }
 
 .pen-range {
     align-self: center;
-    margin: 0 25px;
+    /* margin: 0 2px; */
 }
 
 canvas {
+    display: block;
+    height: 90vh;
     box-shadow: -3px 2px 9px 6px black;
     cursor: pointer;
-    margin-top: 10px;
+    padding-left: 0%;
+    border: 2px solid yellow;
+    /* margin-top: 10px; */
 }
