@@ -1,73 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>White Board</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
     rel="stylesheet">
      <link rel="shortcut icon" href="images/Fav-icon.png" type="image/png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
-    <div class="container">
-        <div class="tools">
-            <div class="choose-operations">
-                <button onClick="undo_last()" type="button" class="button">Undo</button>
-                <button onClick="redo_last()" type="button" class="button">Redo</button>
-                <button onClick="clear_canvas()" type="button" class="button">Clear</button>
-            </div> 
-            <div class="add-note">
-                <span class="material-icons-outlined">
-                    note_add
-                </span>
-            </div>
-            <div class="drawing-tool">
-                <div onclick="pen_tool()" class="pen">
-                    <span class="material-icons-outlined">
-                        gesture
-                    </span> 
-                </div>
-                <div onclick="draw_rect()" class="drawRect">
-                    <span class="material-icons-outlined">
-                        crop_square
-                    </span>
-                </div>
-            </div>
-            <div class="choose-color">  
-                <div onClick="change_color(this)" class="color-field" style="background: red;"></div>
-                <div onClick="change_color(this)" class="color-field" style="background: blue;"></div>
-                <div onClick="change_color(this)" class="color-field" style="background: green;"></div>
-                <div onClick="change_color(this)" class="color-field" style="background: yellow;"></div>
-                <div onClick="change_color(this)" class="color-field" style="background: black;"></div>
-                <div onClick="change_color(this)" class="color-field" style="background: violet;"></div>
-                <div onClick="change_color(this)" class="color-field" style="background: orange;"></div>
-                <div onClick="change_color(this)" class="color-field" style="background: brown;"></div>
-                <input onInput="draw_color = this.value" type="color" class="color-picker">
-            </div>
-            <div class="choose-features">
-                <input onInput="draw_width = this.value" type="range" min="1" max="100" class="pen-range" onInput="draw_width = this.value">
-            </div>
-            <div class="record-screenshot">
-                <span class="material-icons-outlined">
-                    radio_button_checked
-                </span>
-                <span class="material-icons-outlined">
-                    screenshot
-                </span>
-            </div>
-            <div class="theme">
-                <span class="material-icons-outlined">
-                    dark_mode
-                </span>
-                <span class="material-icons-outlined">
-                    light_mode
-                </span>
-            </div>            
+    <script src="./Vendores/js/html2canvas.min.js"></script>
+    <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+  </head>
+  <body>
+    <div class="container" id="capture">
+      <div class="tools">
+        <div class="choose-operations">
+          <button onClick="undo_last()" type="button" class="button">
+            Undo
+          </button>
+          <button onClick="redo_last()" type="button" class="button">
+            Redo
+          </button>
+          <button onClick="clear_canvas()" type="button" class="button">
+            Clear
+          </button>
         </div>
-        <canvas id="canvas"></canvas>
+        <div class="add-note">
+          <span class="material-icons-outlined"> note_add </span>
+        </div>
+        <div class="drawing-tool">
+          <div onclick="pen_tool()" class="pen">
+            <span class="material-icons-outlined"> gesture </span>
+          </div>
+          <div onclick="draw_rect()" class="drawRect">
+            <span class="material-icons-outlined"> crop_square </span>
+          </div>
+        </div>
+        <div class="choose-color">
+          <div
+            onClick="change_color(this)"
+            class="color-field"
+            style="background: red"
+          ></div>
+          <div
+            onClick="change_color(this)"
+            class="color-field"
+            style="background: blue"
+          ></div>
+          <div
+            onClick="change_color(this)"
+            class="color-field"
+            style="background: green"
+          ></div>
+          <div
+            onClick="change_color(this)"
+            class="color-field"
+            style="background: yellow"
+          ></div>
+          <div
+            onClick="change_color(this)"
+            class="color-field"
+            style="background: black"
+          ></div>
+          <div
+            onClick="change_color(this)"
+            class="color-field"
+            style="background: violet"
+          ></div>
+          <div
+            onClick="change_color(this)"
+            class="color-field"
+            style="background: orange"
+          ></div>
+          <div
+            onClick="change_color(this)"
+            class="color-field"
+            style="background: brown"
+          ></div>
+          <input
+            onInput="draw_color = this.value"
+            type="color"
+            class="color-picker"
+          />
+        </div>
+        <div class="choose-features">
+          <input
+            onInput="draw_width = this.value"
+            type="range"
+            min="1"
+            max="100"
+            class="pen-range"
+            onInput="draw_width = this.value"
+          />
+        </div>
+        <div class="record-screenshot">
+          <span class="material-icons-outlined"> radio_button_checked </span>
+          <span class="material-icons-outlined screenshot"> screenshot </span>
+        </div>
+        <div class="theme">
+          <span class="material-icons-outlined"> dark_mode </span>
+          <span class="material-icons-outlined"> light_mode </span>
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
     </div>
     <script src="script.js"></script>
 </body>
