@@ -10,6 +10,10 @@
     rel="stylesheet">
      <link rel="shortcut icon" href="images/Fav-icon.png" type="image/png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/regular.min.js"
+  />
 </head>
 <body>
     <div class="container">
@@ -59,12 +63,20 @@
                 </span>
             </div>
             <div class="theme">
-                <span class="material-icons-outlined">
+                <!-- <span class="material-icons-outlined">
                     dark_mode
-                </span>
-                <span class="material-icons-outlined">
+                </span> -->
+                <!-- <span class="material-icons-outlined">
                     light_mode
-                </span>
+                </span> -->
+                <label class="switch" id="chk">
+                    <i class="fas fa-adjust"></i>
+                    <div>
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </div>
+                  </label>
+
             </div>            
         </div>
         <canvas id="canvas"></canvas>
@@ -72,3 +84,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+

@@ -84,3 +84,13 @@ function undo_last() {
         context.putImageData(restore_array[index], 0, 0);
     }
 }
+
+
+// For dark mode
+
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
