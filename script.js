@@ -98,3 +98,14 @@ const takeScreenshot = function () {
   });
 };
 screenshotBtn.addEventListener("click", takeScreenshot);
+
+// For dark mode
+
+
+const chk = document.getElementById('chk');
+
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+    
+});
