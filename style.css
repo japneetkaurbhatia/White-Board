@@ -1,73 +1,85 @@
 body {
-    margin: 0px;
-    /* padding: 30px; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
-    background: #ad9292;
+  margin: 0px;
+  /* padding: 30px; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  background: #ad9292;
 }
 
 .tools {
-    display: flex;
-    height: 10vh;
-    justify-content: space-evenly;
-    flex-direction: row;
-    margin-top: 35px;
+  display: flex;
+  height: 10vh;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 35px;
 }
 
 .drawing-tool {
-    width: 5%;
-    display: flex;
-    justify-content: space-between;
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.drawing-tool .pen img
+{
+    width: 30px;
+    height:30px;
+    cursor: pointer;
+    margin-right: 30px;
+    display: inline-block;
 }
 
 .drawRect {
-    height: 20px;
-    width: 20px;
+  height: 20px;
+  width: 20px;
 }
- .tools  
-.color-field {
-    height: 20px;
-    width: 20px;
-    min-height: 20px;
-    min-width: 20px;
-    cursor: pointer;
-    display: inline-block;
-    box-sizing: border-box;
-    border: 2px solid white;
-    align-self: center;
-    /* margin: 2px 2px; */
+.tools .color-field {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid white;
+  align-self: center;
+  /* margin: 2px 2px; */
 }
 
- .button {
-    align-self: center;
-    width: 100px;
-    height: 40px;
-    border: 2px solid white;
-    cursor: pointer;
-    color: white;
-    background: #222;
-    font-weight: bold;
-    margin: 0 10px;
+.button {
+  align-self: center;
+  width: 100px;
+  height: 40px;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  background: #222;
+  font-weight: bold;
+  margin: 0 10px;
 }
 
 .color-picker {
-    /* align-self: center; */
-    margin-right: 15px;
-    height: 30px;
-    width: 30px;
+  /* align-self: center; */
+  margin-right: 15px;
+  height: 30px;
+  width: 30px;
 }
 
 .pen-range {
-    align-self: center;
-    /* margin: 0 2px; */
+  align-self: center;
+  /* margin: 0 2px; */
 }
 
 canvas {
-    display: block;
-    height: 90vh;
-    box-shadow: -3px 2px 9px 6px black;
-    cursor: pointer;
-    padding-left: 0%;
-    border: 2px solid yellow;
-    /* margin-top: 10px; */
+  display: block;
+  height: 90vh;
+  box-shadow: -3px 2px 9px 6px black;
+  cursor: pointer;
+  padding-left: 0%;
+  border: 2px solid yellow;
+  /* margin-top: 10px; */
+}
+.screenshot:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }

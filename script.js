@@ -114,3 +114,12 @@ draw_rect = () => {
     context.strokeRect(locA.x, locA.y, locB.x - locA.x, locB.y - locA.y);
   });
 };
+// Screenshot
+const screenshotBtn = document.querySelector(".screenshot");
+const takeScreenshot = function () {
+  let capture = document.getElementById("capture");
+  html2canvas(capture).then(function (canvas) {
+    return Canvas2Image.saveAsImage(canvas);
+  });
+};
+screenshotBtn.addEventListener("click", takeScreenshot);
