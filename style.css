@@ -5,6 +5,23 @@ body {
   overflow: hidden;
   background: #ad9292;
 }
+.first_section_background_color{
+  background-color: black;
+  height: 60px;
+}
+.navbar-brand{
+  font-size: 2rem;
+  font-family: serif;
+  color: blueviolet;
+  
+}
+.navbar-brand:hover{
+  color: #aaaaaa;
+}
+.container-fluid{
+  padding: 1% 2%;
+}
+
 
 .tools {
   display: flex;
