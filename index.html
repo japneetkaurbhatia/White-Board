@@ -34,7 +34,7 @@
         </div>
         <div class="drawing-tool">
           <div onclick="pen_tool()" class="pen">
-            <img src="images/brush-stroke.png" />
+            <img src="images/paint-brush.png">
           </div>
           <div onclick="draw_rect()" class="drawRect">
             <span class="material-icons-outlined" style="cursor: pointer">
@@ -104,12 +104,20 @@
           <span class="material-icons-outlined screenshot"> screenshot </span>
         </div>
         <div class="theme">
-          <span class="material-icons-outlined"> dark_mode </span>
-          <span class="material-icons-outlined"> light_mode </span>
+          <!-- <span class="material-icons-outlined"> dark_mode </span>
+          <span class="material-icons-outlined"> light_mode </span> -->
+          <label class="switch" id="chk">
+            <i class="fas fa-adjust"></i>
+            <div>
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </div>
+          </label>
         </div>
       </div>
       <canvas id="canvas"></canvas>
     </div>
     <script src="script.js"></script>
-  </body>
+    </body>
 </html>
+
