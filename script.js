@@ -19,14 +19,14 @@ function change_color(element) {
 }
 
 function pen_tool() {
-canvas.addEventListener("touchstart", start, false);
-canvas.addEventListener("touchmove", draw, false);
-canvas.addEventListener("mousedown", start, false);
-canvas.addEventListener("mousemove", draw, false);
+  canvas.addEventListener("touchstart", start, false);
+  canvas.addEventListener("touchmove", draw, false);
+  canvas.addEventListener("mousedown", start, false);
+  canvas.addEventListener("mousemove", draw, false);
 
-canvas.addEventListener("touchend", stop, false);
-canvas.addEventListener("mouseup", stop, false);
-canvas.addEventListener("mouseout", stop, false);
+  canvas.addEventListener("touchend", stop, false);
+  canvas.addEventListener("mouseup", stop, false);
+  canvas.addEventListener("mouseout", stop, false);
 }
 
 function start(event) {
@@ -103,12 +103,34 @@ screenshotBtn.addEventListener("click", takeScreenshot);
 
 // For dark mode
 
+const chk = document.getElementById("chk");
 
-const chk = document.getElementById('chk');
-
-
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
-    
+chk.addEventListener("change", () => {
+  document.body.classList.toggle("dark");
 });
 
+draw_rect = () => {
+  function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top,
+    };
+  }
+
+  var locA, locB;
+  canvas.addEventListener("mousedown", function (e) {
+    e.preventDefault();
+    context.beginPath();
+    locA = getMousePos(canvas, e);
+    stop();
+  });
+
+  canvas.addEventListener("mouseup", function (e) {
+    context.beginPath();
+    e.preventDefault();
+    locB = getMousePos(canvas, e);
+    context.strokeStyle = draw_color;
+    context.strokeRect(locA.x, locA.y, locB.x - locA.x, locB.y - locA.y);
+  });
+};
