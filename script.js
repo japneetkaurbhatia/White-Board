@@ -18,6 +18,7 @@ function change_color(element) {
   draw_color = element.style.background;
 }
 
+function pen_tool() {
 canvas.addEventListener("touchstart", start, false);
 canvas.addEventListener("touchmove", draw, false);
 canvas.addEventListener("mousedown", start, false);
@@ -26,6 +27,7 @@ canvas.addEventListener("mousemove", draw, false);
 canvas.addEventListener("touchend", stop, false);
 canvas.addEventListener("mouseup", stop, false);
 canvas.addEventListener("mouseout", stop, false);
+}
 
 function start(event) {
   is_drawing = true;
