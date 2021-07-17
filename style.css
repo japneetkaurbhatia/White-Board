@@ -4,6 +4,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
   background: #ad9292;
+  
 }
 
 .tools {
@@ -87,10 +88,9 @@ canvas {
 /* For dark mode */
 
  
-body.dark {
-  background-color: rgb(15, 12, 12);
-  color: #e6e6e6;
-  border-color: #e6e6e6;
+
+.dark{
+  filter:invert(100%);
 }
 
 .switch {
@@ -131,5 +131,4 @@ body.dark {
 
 input:checked + .slider {
   transform: translateX(8px);
-} 
-
+}
