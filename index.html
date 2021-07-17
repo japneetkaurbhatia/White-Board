@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>White Board</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-    rel="stylesheet">
-     <link rel="shortcut icon" href="images/Fav-icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/Fav-icon.png" type="image/png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./Vendores/js/html2canvas.min.js"></script>
     <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
@@ -35,7 +37,9 @@
             <img src="images/paint-brush.png">
           </div>
           <div onclick="draw_rect()" class="drawRect">
-            <span class="material-icons-outlined"> crop_square </span>
+            <span class="material-icons-outlined" style="cursor: pointer">
+              crop_square
+            </span>
           </div>
         </div>
         <div class="choose-color">
@@ -114,5 +118,6 @@
       <canvas id="canvas"></canvas>
     </div>
     <script src="script.js"></script>
-</body>
+    </body>
 </html>
+

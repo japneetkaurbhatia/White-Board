@@ -89,6 +89,31 @@ function undo_last() {
   }
 }
 
+draw_rect = () => {
+  function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top,
+    };
+  }
+
+  var locA, locB;
+  canvas.addEventListener("mousedown", function (e) {
+    e.preventDefault();
+    context.beginPath();
+    locA = getMousePos(canvas, e);
+    stop();
+  });
+
+  canvas.addEventListener("mouseup", function (e) {
+    context.beginPath();
+    e.preventDefault();
+    locB = getMousePos(canvas, e);
+    context.strokeStyle = draw_color;
+    context.strokeRect(locA.x, locA.y, locB.x - locA.x, locB.y - locA.y);
+  });
+};
 // Screenshot
 const screenshotBtn = document.querySelector(".screenshot");
 const takeScreenshot = function () {
