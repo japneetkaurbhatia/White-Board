@@ -34,9 +34,13 @@ This is a simple beginner friendly project, used for writing or drawing.
 + Javascript
 + JQuery
 ## Screenshots : 
-![Display](https://github.com/japneetbhatia/White-Board/blob/master/images/WhiteBoard.png)
-![Display](https://github.com/japneetbhatia/White-Board/blob/master/images/darkmode.png)
-![Display](https://github.com/japneetbhatia/White-Board/blob/master/images/lightmode.png)
+Light mode<br>
+![Display](https://github.com/Naman-mahi/White-Board/blob/master/images/lightmode.png)
+Dark mode 
+![Display](https://github.com/Naman-mahi/White-Board/blob/master/images/darkmode.png)
+Whiteboard 
+![Display](https://github.com/Naman-mahi/White-Board/blob/master/images/Whiteboard.png)
+Rectangle 
 ![Display](https://github.com/Naman-mahi/White-Board/blob/master/images/Rectangle.png)
 ## Contribution Guidelines
 
