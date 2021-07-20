@@ -34,7 +34,7 @@ This is a simple beginner friendly project, used for writing or drawing.
 + Javascript
 + JQuery
 
-
+![Display](https://github.com/japneetbhatia/White-Board/blob/master/images/WhiteBoard.JPG)
 
 
 
