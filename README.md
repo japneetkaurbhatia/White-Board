@@ -13,8 +13,8 @@
 
 </div>
 
-# WHITE-BOARD
-
+# Introduction
+This is a simple beginner friendly project, used for writing or drawing. 
 
 
 ## Featues :
@@ -23,6 +23,8 @@
 + Add Notes
 + Switch Between Light and Dark Mode
 + Record Screen or Take ScreenShot
++ Night mode 
++ different type shapes like Circles Rectangle Star 
 
 ## Tech Stack : 
 + HTML
@@ -30,31 +32,21 @@
 + Javascript
 + JQuery
 
-![Display](https://github.com/japneetbhatia/White-Board/blob/master/images/WhiteBoard.JPG)
-## Introduction
 
-ProPack is a solution for every beginner programmer who cannot find the right resources and projects. We provide basic web development projects now on our website we are planning to add some more projects in the future and this is an open-source project so anyone can contribute to it.
-Let's Build It Together.
 
-### Version Releases
 
-- [v0.1 (First Ever Release)](https://github.com/WH0SUMIT/propack/releases/tag/v1.0)
-
-## Documentation
-
-Here's the [Documentation for ProPack](https://propack.netlify.app/docs/#/)
 
 ## Contribution Guidelines
 
 We want to build a great atmosphere where all the developers/designers or peoples are ready to contribute. All the contributions, issues, and feature requests are welcome.
 To start contributing, follow the below guidelines:
 
-**1.** Fork [this](https://github.com/wh0sumit/propack) repository.
+**1.** Fork [this](https://github.com/japneetbhatia/White-Board) repository.
 
 **2.** Clone your forked copy of the project.
 
 ```
-git clone https://github.com/<your_user_name>/propack
+git clone https://github.com/<your_user_name>/White-Board
 ```
 
 **3.** Navigate to the project directory .
@@ -66,7 +58,7 @@ cd propack
 **4.** Add a reference(remote) to the original repository.
 
 ```
-git remote add upstream https://github.com/WH0SUMIT/propack.git
+git remote add upstream https://github.com/japneetbhatia/White-Board.git
 ```
 
 **5.** Check the remotes for this repository.
