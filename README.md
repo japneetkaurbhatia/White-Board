@@ -58,7 +58,7 @@ git clone https://github.com/<your_user_name>/White-Board
 **3.** Navigate to the project directory .
 
 ```
-cd propack
+cd White-Board 
 ```
 
 **4.** Add a reference(remote) to the original repository.
