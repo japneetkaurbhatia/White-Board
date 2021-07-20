@@ -12,7 +12,9 @@
 ![Platform](https://img.shields.io/badge/platform-Visual%20Studio%20Code-blue)
 
 </div>
-
+### This project is a part of the following Open Source Program
+  
+  ![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif) 
 # Introduction
 This is a simple beginner friendly project, used for writing or drawing. 
 
@@ -107,7 +109,6 @@ git push -u origin <your_branch_name>
 
 **15** You have made a PR to the awesome-javascript-projects :boom: . Wait for your submission to be accepted and your PR to be merged.
 
----
 
 ## Our valuable Contributors 👨🏻‍🚀 :
 <br>
