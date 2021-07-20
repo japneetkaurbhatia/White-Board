@@ -37,7 +37,7 @@ This is a simple beginner friendly project, used for writing or drawing.
 ![Display](https://github.com/japneetbhatia/White-Board/blob/master/images/WhiteBoard.png)
 ![Display](https://github.com/japneetbhatia/White-Board/blob/master/images/darkmode.png)
 ![Display](https://github.com/japneetbhatia/White-Board/blob/master/images/lightmode.png)
-![Display](https://github.com/japneetbhatia/White-Board/blob/master/images/Rectangle.png)
+![Display](https://github.com/Naman-mahi/White-Board/blob/master/images/Rectangle.png)
 ## Contribution Guidelines
 
 We want to build a great atmosphere where all the developers/designers or peoples are ready to contribute. All the contributions, issues, and feature requests are welcome.
