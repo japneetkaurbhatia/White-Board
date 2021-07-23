@@ -37,19 +37,19 @@
           </button>
         </div>
         <div class="add-note">
-          <span class="material-icons-outlined"> note_add </span>
+          <div class="search">
+          <span class="material-icons-outlined"><a href="notes.html">note_add</a></span>
+          <p class="one">Notes</p>
         </div>
-        <div class="search">
-          <a href="notes.html"> my-notes </a>
-        </div>
+      </div>
         <div class="drawing-tool">
           <div onclick="pen_tool()" class="pen">
             <img src="images/paint-brush.png">
           </div>
           <div onclick="draw_rect()" class="drawRect">
             <span class="material-icons-outlined"> crop_square </span>
-          </div>
-          
+            <p class="three">Rectangle</p>
+        </div>
         </div>
         <div class="choose-color">
           <div
@@ -97,6 +97,7 @@
             type="color"
             class="color-picker"
           />
+          <p class="four">Pick a color</p>
         </div>
         <div class="choose-features">
           <input
@@ -107,10 +108,12 @@
             class="pen-range"
             onInput="draw_width = this.value"
           />
+          <p class="five">Font size</p>
         </div>
         <div class="record-screenshot">
           <span class="material-icons-outlined"> radio_button_checked </span>
           <span class="material-icons-outlined screenshot"> screenshot </span>
+          <p class="six">Take a Screenshot</p>
         </div>
         <div class="theme">
           <!-- <span class="material-icons-outlined"> dark_mode </span>
@@ -122,6 +125,7 @@
               <span class="slider round"></span>
             </div>
           </label>
+          <p class="seven">Dark theme</p>
         </div>
         
     </div>
